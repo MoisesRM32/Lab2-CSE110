@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review and Upcoming Events</title>
+</head>
+<body>
+    <header>
+        <h3>Current date: March 15, 2025<span id="date"></span></h2>
+        <!--Simple Checkin-->
+        <nav>
+            <p>Links</p>
+            <p><a href="#Checkin & Attendance">Checkin&Attendance</a></p>
+            <p><a href="#Agenda">Today's Game Plan</a></p>
+            <p><a href="#Future Ideas">Future Plans</a></p>
+            <p><a href="#Questions">Questions/Concerns</a></p>
+            <p><a href="#PreRecording">Meeting Clips</a></p>
+            <p><a href="#AudioClips">Meeting Audio Recordings</a></p>
+        </nav>
+        <!-- picture of our mascot -->
+        <figure>
+            <figcaption><b>Our Mascot GITTY</b></figcaption>
+            <img src="Usedpictures/GITMascot.png" alt="Our Mascot Gitty" width="200">
+        </figure>
+
+
+
+
+        <section id="Checkin & Attendance">
+            <h2>Checkins & Attendance</h2>
+            <form>
+                <p>How Are You Feeling On A Scale 1-5?</p>
+                <label>
+                    <!-- can select but can't deselect as you need CSS -->
+                    <input type="radio">
+                    1
+                    <input type="radio">
+                    2
+                    <input type="radio">
+                    3
+                    <input type="radio">
+                    4
+                    <input type="radio">
+                    5
+                </label>
+                <p>*1 is NOT GOOD and 5 is GOOD*</p>
+            </form>
+
+            <!-- input name and submit button to submit results -->
+            <p>Attendance</p>
+            <form id="nameForm">
+                <label for="nameInput">Name</label>
+                <input type="text" id="nameInput" name="name" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p>Checked In</p>
+            <ul>
+                <li>Steve</li>
+                <li>Chicken Jockey</li>
+            </ul>
+        </section>
+    </header>
+
+    <!-- Agenda bullet points and notes -->
+    <main>
+        <section id="Agenda">
+            <h2>Today's Game Plan</h2>
+                <p>Things to do</p>
+                <ul>
+                    <li>Discuss implementation and plan of Game</li>
+                    <li>Write our code</li>
+                    <li>Test and debug</li>
+                    <li>Submit</li>
+                </ul>
+                <p><b>Things to Note:</b> Thursday we will be meeting outside
+                of class for 20mins. Make sure everyone pulls up to class so we 
+                understand what is going on for our project and we can organize 
+                who is doing what.</p>
+        </section>
+        <!-- Future ideas bullet points -->
+        <section id="Future Ideas">
+            <h2>Future Endevers</h2>
+            <ul>
+                <li>Update our Team Website to make it better</li>
+                <li>Organize how our team operates on different porjects in the future</li>
+            </ul>
+        </section>
+        <!-- Audio and Video Recordings -->
+        <section id="PreRecording">
+            <h2>Clips From Meeting</h2>
+            <video width="640" height="360" controls>
+                <source src="Usedpictures/IMG_0342.mp4" type="video/mp4">
+            </video>
+
+        </section>
+
+
+        
+        <section id="AudioClips">
+            <h2>Audio Clips</h2>
+            <audio controls>
+                <source src="Usedpictures/IMG_0342.mp3" type="audio/mpeg">
+              </audio>
+
+        </section>
+
+        <!-- Questions Text area -->
+        <section id="Questions">
+            <h3>Questions or Concerns</h3>
+            <form>
+                <label for="questions">Comments:</label><br>
+                <textarea id="questions" name="questions" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </section>
+
+    </main>
+
+
+    <footer>
+        <details>
+            <summary>Contributors</summary>
+            <p>Moises Mendoza, Steve, Chicken Jockey</p>
+        </details>
+    </footer>
+
+
+</body>
+</html>
